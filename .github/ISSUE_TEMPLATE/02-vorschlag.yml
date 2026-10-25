@@ -1,0 +1,41 @@
+name: "💡 Verbesserung / Feature request"
+description: "Ideen und Funktionswünsche / Suggest improvements and features"
+title: "[Idee/Feature] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke für deine Idee! / Thanks for your suggestion!
+        Bitte keine privaten Daten veröffentlichen. / Do not share private information.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: "Art des Vorschlags / Type of suggestion"
+      options:
+        - Neue Funktion / New feature
+        - Bestehende Funktion verbessern / Improve existing feature
+        - Bedienung oder Design / Usability or design
+        - Sonstiges / Other
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: "Vorschlag / Your suggestion"
+      description: "Was soll ReLinkPilot künftig können? / What should ReLinkPilot do?"
+    validations:
+      required: true
+  - type: textarea
+    id: use-case
+    attributes:
+      label: "Nutzen oder Beispiel / Why is it useful?"
+      description: "Wann würdest du die Funktion verwenden? / When would you use it?"
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: "Weitere Hinweise / Additional details"
+      description: "Optional: Bilder oder Beispiele anhängen. / Optionally attach screenshots or examples."
+    validations:
+      required: false
